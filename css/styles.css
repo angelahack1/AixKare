@@ -11157,3 +11157,7 @@ p {
 .background-wheat {
   background-color: wheat;
 }
+
+.brand-logo {
+  height: 3rem;
+}

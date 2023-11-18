@@ -2,10 +2,10 @@
   "name": "aixkare",
   "version": "1.0.0",
   "description": "AixKare main site",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
-    "test_linux": "export TESTING=1 && export LEVEL=debug && node index.mjs",
-    "start_linux": "export TESTING=0 && export LEVEL=release && node index.mjs",
+    "test": "export TESTING=1 && export LEVEL=debug && node index.mjs",
+    "start": "export TESTING=0 && export LEVEL=release && node index.mjs",
     "test_windows": "set TESTING=1 && set LEVEL=debug && node index.mjs",
     "start_windows": "set TESTING=0 && set LEVEL=release && node index.mjs"
   },

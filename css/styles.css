@@ -11318,5 +11318,10 @@ p {
 .heading-about {
   text-align: center !important;
 }
+
+.my-feat-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
  /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
   /* } */

@@ -11323,5 +11323,13 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.margin-bottom-20rem {
+  margin-bottom: 20rem;
+}
+
+.padding-2rem {
+  padding: 2rem;
+}
  /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
   /* } */

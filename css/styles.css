@@ -3666,11 +3666,6 @@ textarea.form-control-lg {
     left: -9999px;
 }
 
-.extent-thanks {
-  margin-top: 200px;
-  margin-bottom: 300px;
-}
-
 @media (min-width: 0px ) and (max-width: 1000px) {
   .img-fluid {
      width: 100%;
@@ -11250,8 +11245,7 @@ p {
   }
   
   .extent-thanks {
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-top: 100px;
   }
   
   @media (min-width: 0px ) and (max-width: 1000px) {
@@ -11328,8 +11322,17 @@ p {
   margin-bottom: 20rem;
 }
 
+.margin-bottom-5rem {
+  margin-bottom: 5rem;
+}
+
 .padding-2rem {
   padding: 2rem;
 }
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
  /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
   /* } */

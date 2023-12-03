@@ -11334,5 +11334,9 @@ p {
   font-size: 1rem;
 }
 
+.padding-1rem-both-sides {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
  /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
   /* } */

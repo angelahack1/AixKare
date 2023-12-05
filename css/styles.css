@@ -11338,5 +11338,72 @@ p {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.btn-black {
+  background-color: #000000;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
+
+.dropdown-flags {
+  position: absolute;
+  left: 150px;
+  top: 12px;
+}
+
+.dropdown-item-flags {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 600;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #505050;
+  border: 0;
+  font-family: system-ui;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.flag-uae {
+    display: inline-block;
+    content: '';
+    background: url('../assets/img/flags.webp') no-repeat;
+    width: 16px;
+    height: 16px;
+    background-position: 0px -26px;
+}
+
+.flag-brasil {
+  display: inline-block;
+  content: '';
+  background: url(../assets/img/flags.webp) no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: 0px -728px;
+}
+
+.flag-mexico {
+  display: inline-block;
+  content: '';
+  background: url(../assets/img/flags.webp) no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: -72px 0px;
+}
+
+.flag-usa {
+  display: inline-block;
+  content: '';
+  background: url(../assets/img/flags.webp) no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: -72px -1950px;
+}
+
+
  /*ALM Last change 08/11/2023 at 5:57 pm. (@media updates)*/
   /* } */

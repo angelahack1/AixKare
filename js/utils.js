@@ -85,6 +85,37 @@ function addValidationInClient() {
     }
 }
 
+
+function setFlagOfBrasil() {
+    $("html").attr("lang", "pt");
+    $("#span-flag").text = "Portuguese";
+    $("#i-flag").attr("class","flag-brasil flag m-0");
+    $("#home")[0].innerText = "Página principal";
+    $("#about")[0].innerText = "Sobre AixKare"
+    $("#products")[0].innerText = "Produtos e serviços";
+    $("#contact")[0].innerText = "Contate-nos";
+}
+
+function setFlagOfUSA() {
+    $("html").attr("lang", "en");
+    $("#span-flag").text = "English";
+    $("#i-flag").attr("class","flag-usa flag m-0");
+    $("#home")[0].innerText = "Main Page";
+    $("#about")[0].innerText = "About AixKare"
+    $("#products")[0].innerText = "Products and Services";
+    $("#contact")[0].innerText = "Contact";
+}
+
+function setFlagOfMexico() {
+    $("html").attr("lang", "es");
+    $("#span-flag").text = "Spanish";
+    $("#i-flag").attr("class","flag-mexico flag m-0");
+    $("#home")[0].innerText = "Página principal";
+    $("#about")[0].innerText = "Acerca de AixKare"
+    $("#products")[0].innerText = "Produtos y Servicios";
+    $("#contact")[0].innerText = "Contacto";
+}
+
 $(function() {
     _headerId = $("#headerId");
     $(document).on('click', handleClickOutside);

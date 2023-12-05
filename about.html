@@ -22,22 +22,42 @@
             <nav class="navbar navbar-dark bg-dark" aria-label="Main navbar">
                 <div class="container-fluid">
                     <a href="index.html"><img class="navbar-brand brand-logo" src="assets/img/AiXKare_Logo.png" alt="Logo of AIXKARE"></a>
+                    <div class="dropdown-flags">
+                        <button class="btn btn-secondary dropdown-toggle btn-black" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span id="span-flag" class="visually-hidden">English</span>
+                          <i id="i-flag" class="flag-usa flag m-0"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item-flags" href="#" onclick="setFlagOfUSA();">
+                                <span>English</span>
+                                <i class="flag-usa flag m-0"></i>
+                              </a>
+                              <a class="dropdown-item-flags" href="#" onclick="setFlagOfMexico();">
+                                <spa>Spanish</span>
+                                <i class="flag-mexico flag m-0"></i>
+                              </a>
+                              <a class="dropdown-item-flags" href="#" onclick="setFlagOfBrasil();">
+                                <spa>Portuguese</span>
+                                <i class="flag-brasil flag m-0"></i>
+                              </a>
+                        </div>
+                      </div>
                     <button id="buttonMenu" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse" id="navbar01">
                     <ul class="navbar-nav me-auto mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a id="home" class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active nav-link-disabled-inside" aria-current="page" href="#">About</a>
+                            <a id="about" class="nav-link active nav-link-disabled-inside" aria-current="page" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="prodandserv.html">Products and Services</a>
+                            <a id="products" class="nav-link" href="prodandserv.html">Products and Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a id="contact" class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Apps</a>

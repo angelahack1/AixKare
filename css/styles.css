@@ -3600,7 +3600,7 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   font-family: system-ui;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11366,15 +11366,6 @@ p {
   font-family: system-ui;
   font-size: 1rem;
   background-color: #ffffff;
-}
-
-.flag-uae {
-    display: inline-block;
-    content: '';
-    background: url('../assets/img/flags.webp') no-repeat;
-    width: 16px;
-    height: 16px;
-    background-position: 0px -26px;
 }
 
 .flag-brasil {

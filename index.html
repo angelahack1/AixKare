@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script type="text/javascript">
+          var _langContainer = null;
+          var _lang = null;
+          const searchParams = new URLSearchParams(window.location.search);
+          if(typeof searchParams != 'undefined' && (searchParams != null) & searchParams.has('lang') ) {
+            _lang = searchParams.get('lang');
+          }
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -28,16 +36,16 @@
                         <i id="i-flag" class="flag-usa flag m-0"></i>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item-flags" href="#" onclick="setFlagOfUSA();">
-                          <span>English</span>
+                        <a class="dropdown-item-flags" href="#" onclick="setEnglish();">
+                          <span id="spanEng"></span>
                           <i class="flag-usa flag m-0"></i>
                         </a>
-                        <a class="dropdown-item-flags" href="#" onclick="setFlagOfMexico();">
-                          <spa>Spanish</span>
+                        <a class="dropdown-item-flags" href="#" onclick="setSpanish();">
+                          <span id="spanSpa"></span>
                           <i class="flag-mexico flag m-0"></i>
                         </a>
-                        <a class="dropdown-item-flags" href="#" onclick="setFlagOfBrasil();">
-                          <spa>Portuguese</span>
+                        <a class="dropdown-item-flags" href="#" onclick="setPortuguese();">
+                          <span id="spanPor"></span>
                           <i class="flag-brasil flag m-0"></i>
                         </a>
                       </div>
@@ -86,9 +94,9 @@
                    </div>
                    <div class="container">
                     <div class="carousel-caption text-start padding-1rem-both-sides">
-                      <h1>AI eXtended for Healthcare.</h1>
-                      <p class="opacity-85">Our products leverage AI to offer tailored services according to your needs.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#">Explore our technologies</a></p>
+                      <h1 id="bannerAI">AI eXtended for Healthcare.</h1>
+                      <p id="bannerContentAI" class="opacity-85">Our products leverage AI to offer tailored services according to your needs.</p>
+                      <p><a id="anchorExplore" class="btn btn-lg btn-primary" href="#">Explore our technologies</a></p>
                     </div>
                   </div>
                 </div>
@@ -99,9 +107,9 @@
                   </div>
                   <div class="container">
                     <div class="carousel-caption text-start padding-1rem-both-sides">
-                      <h1>AI eXtended communications</h1>
-                      <p class="opacity-85">Our network communicates using the most advanced technology offering low latency and secure channels</p>
-                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                      <h1 id="bannerCom">AI eXtended communications</h1>
+                      <p id="bannerContentCom" class="opacity-85">Our network communicates using the most advanced technology offering low latency and secure channels.</p>
+                      <p><a id="anchorLearnCom" class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                     </div>
                   </div>
                 </div>
@@ -112,40 +120,41 @@
                     </div>
                   <div class="container">
                     <div class="carousel-caption text-end padding-1rem-both-sides">
-                      <h1>AI eXtended cyber-secure technologies</h1>
-                      <p class="opacity-85">The information over all the communications channels travels securely using the most advanced cyber-secured infrastructure</p>
-                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                      <h1 id="bannerSec">AI eXtended cyber-secure technologies</h1>
+                      <p id="bannerContentSec" class="opacity-85">The information over all the communications channels travels securely using the most advanced cyber-secured infrastructure.</p>
+                      <p><a id="anchorLearnSec" class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                     </div>
                   </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span id="spanCarouselPrev" class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span id="spanCarouselNext" class="visually-hidden">Next</span>
               </button>
             </section>
             <section>
                 <div class="row featurette margin-bottom-5rem">
                     <div class="col-md-12 py-4 background-wheat my-feat-padding">
-                      <h2 class="row-cols1 featurette-heading fw-bold lh-1">This site is under construction
+                      <h2 id="construction-header" class="row-cols1 featurette-heading fw-bold lh-1">This site is under construction
                       </h2>
-                      <h2 class="row-cols1 featurette-heading fw-bold lh-1">We are working very, very hard...
+                      <h2 id="working-header" class="row-cols1 featurette-heading fw-bold lh-1">We are working very, very hard...
                       </h2>
-                      <p class="lead">In AIXKARE we are working hard to complete our start up process, in order to provide you with our services, ASAP.</p>
+                      <p id="working-text" class="lead">In AIXKARE we are working hard to complete our start up process, in order to provide you with our services, ASAP.</p>
                     </div>
                   </div>
             </section>
         </main>
         <footer class="footer text-faded text-center py-3">
           <div class="container">
-              <p class="m-0 small">
+              <p id="rights" class="m-0 small">
                   All rights reserved &copy; AixKare 2023
               </p>
           </div>
       </footer>
+      <script src="js/lang.js"></script>
     </body>
 </html>

@@ -108,6 +108,16 @@ class LanguageContainer {
         this._textButtonSendEng = "Send";
         this._textButtonSendSpa = "Enviar";
         this._textButtonSendPor = "Enviar";
+        this._textSpanThanksEng = "Thanks!";
+        this._textSpanThanksSpa = "Gracias!";
+        this._textSpanThanksPor = "Obrigado!";
+        this._textSpanContentThanksEng = "We have received your comments.";
+        this._textSpanContentThanksSpa = "Hemos recibido tus comentarios.";
+        this._textSpanContentThanksPor = "Recebemos seus comentários.";
+        this._textBack2MainPageEng = "Back to main page...";
+        this._textBack2MainPageSpa = "Regresar a página principal...";
+        this._textBack2MainPagePor = "Retornar à página principal...";
+
         console.log("LanguageContainer Object setted!, actual Lang: <"+langP+">");
     }
 

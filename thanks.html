@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script type="text/javascript">
+            var _langContainer = null;
+            var _lang = null;
+            const searchParams = new URLSearchParams(window.location.search);
+            if(typeof searchParams != 'undefined' && (searchParams != null) & searchParams.has('lang') ) {
+              _lang = searchParams.get('lang');
+            }
+        </script>        
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -79,10 +87,10 @@
                         <div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Thanks!</span>
-                                    <span class="section-heading-lower">We have received your comments.</span>
+                                    <span id="spanThanks" class="section-heading-upper">Thanks!</span>
+                                    <span id="spanContentThanks" class="section-heading-lower">We have received your comments.</span>
                                 </h2>
-                                <a class="btn btn-primary btn-xl" href="index.html">
+                                <a id="back2MainPage" class="btn btn-primary btn-xl" href="index.html">
                                     Back to main page...
                                 </a>
                             </div>
@@ -101,11 +109,11 @@
                                 p-5
                                 rounded">
                         <h2 class="section-heading mb-9 heading-about">
-                            <span class="section-heading-upper">Artificial Intelligence eXtended for K(c)are</span>
-                            <span class="section-heading-lower">About us</span>
+                            <span id="spanHeaderAbout" class="section-heading-upper">Artificial Intelligence eXtended for K(c)are</span>
+                            <span id="spanSubHeaderAbout" class="section-heading-lower">About us</span>
                         </h2>
-                        <p class="font-size-1rem">Company founded in 2019, whose mission is to provide well-being to our customers through technological products focused on Healtcare.</p>
-                        <p class="font-size-1rem">
+                        <p id="paragraphAbout" class="font-size-1rem">Company founded in 2019, whose mission is to provide well-being to our customers through technological products focused on Healtcare.</p>
+                        <p id="paragraphInnerAbout" class="font-size-1rem">
                             We help you to
                             <em> be safe and/or take care</em>
                             of those who matter most to you.
@@ -117,10 +125,11 @@
         </section>
         <footer class="footer text-faded text-center py-3">
             <div class="container">
-                <p class="m-0 small">
+                <p id="rights" class="m-0 small">
                     All rights reserved &copy; AixKare 2023
                 </p>
             </div>
         </footer>
+        <script src="js/lang.js"></script>
     </body>
 </html>

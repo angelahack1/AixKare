@@ -238,12 +238,21 @@ class LanguageContainer {
         }
     }
 
-    changeHrefToAnchor(object, anchor) {
+    changeHrefToAnchor(object, href) {
         if(typeof object != 'undefined' && (object != null) ) {
-            object.setAttribute("href", anchor);
+            object.setAttribute("href", href);
             console.log("Object: "+object+", updated to new href content");
         } else {
             console.log("Object not defined, setting href: <"+object+">");
+        }
+    }
+
+    changeActionToForm(object, action) {
+        if(typeof object != 'undefined' && (object != null) ) {
+            object.setAttribute("action", action);
+            console.log("Object: "+object+", updated to new action trigger");
+        } else {
+            console.log("Object not defined, setting action: <"+object+">");
         }
     }
 
@@ -315,6 +324,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksEng);
                 this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageEng);
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=en");
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=en");
             break;
             case 'es':
                 $("#i-flag").attr("class","flag-mexico flag m-0");
@@ -357,6 +367,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksSpa);
                 this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageSpa);
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=es");
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=es");
             break;
             case 'pt':
                 $("#i-flag").attr("class","flag-brasil flag m-0");
@@ -399,7 +410,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksPor);
                 this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPagePor);
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=pt");
-
+                this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=pt");
             break;
         }
         return true;

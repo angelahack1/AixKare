@@ -65,7 +65,7 @@ function handleFormSubmit(event) {
      email: form.formControlMail.value,
      comment: form.formControlTextarea.value
    };
-    window.top.location.href = form.getAttribute('action')+'?email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
+    window.top.location.href = form.getAttribute('action')+'&email='+form.formControlMail.value+'&comment='+form.formControlTextarea.value;
  }
 
 function addValidationInClient() { 

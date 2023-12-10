@@ -311,6 +311,10 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=en");
                 this.changeHrefToAnchor($("#products")[0], "products.html?lang=en");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=en");
+                this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksEng);
+                this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksEng);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageEng);
+                this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=en");
             break;
             case 'es':
                 $("#i-flag").attr("class","flag-mexico flag m-0");
@@ -349,6 +353,10 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=es");
                 this.changeHrefToAnchor($("#products")[0], "products.html?lang=es");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=es");
+                this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksSpa);
+                this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksSpa);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPageSpa);
+                this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=es");
             break;
             case 'pt':
                 $("#i-flag").attr("class","flag-brasil flag m-0");
@@ -387,6 +395,11 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=pt");
                 this.changeHrefToAnchor($("#products")[0], "products.html?lang=pt");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=pt");
+                this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksPor);
+                this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksPor);
+                this.changeInnerTextToObject($("#back2MainPage")[0], this._textBack2MainPagePor);
+                this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=pt");
+
             break;
         }
         return true;

@@ -1,6 +1,6 @@
 /*!
-* Start Bootstrap - Artecnología alias Aixkare v8.0.0 (https://aixkare.com)
-* Copyright Artecnología 2023
+* Start Bootstrap - Aixkare v8.0.0 (https://aixkare.com)
+* Copyright AiXKare 2023
 */
 // Highlights current date on contact page
 window.addEventListener('DOMContentLoaded', event => {

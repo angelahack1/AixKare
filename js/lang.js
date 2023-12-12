@@ -318,7 +318,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#buttonSend")[0], this._textButtonSendEng);
                 this.changeHrefToAnchor($("#home")[0], "index.html?lang=en");
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=en");
-                this.changeHrefToAnchor($("#products")[0], "products.html?lang=en");
+                this.changeHrefToAnchor($("#products")[0], "prodandserv.html?lang=en");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=en");
                 this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksEng);
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksEng);
@@ -362,7 +362,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#buttonSend")[0], this._textButtonSendSpa);
                 this.changeHrefToAnchor($("#home")[0], "index.html?lang=es");
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=es");
-                this.changeHrefToAnchor($("#products")[0], "products.html?lang=es");
+                this.changeHrefToAnchor($("#products")[0], "prodandserv.html?lang=es");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=es");
                 this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksSpa);
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksSpa);
@@ -406,7 +406,7 @@ class LanguageContainer {
                 this.changeInnerTextToObject($("#buttonSend")[0], this._textButtonSendPor);
                 this.changeHrefToAnchor($("#home")[0], "index.html?lang=pt");
                 this.changeHrefToAnchor($("#about")[0], "about.html?lang=pt");
-                this.changeHrefToAnchor($("#products")[0], "products.html?lang=pt");
+                this.changeHrefToAnchor($("#products")[0], "prodandserv.html?lang=pt");
                 this.changeHrefToAnchor($("#contact")[0], "contact.html?lang=pt");
                 this.changeInnerTextToObject($("#spanHeaderAbout")[0], this._textSpanThanksPor);
                 this.changeInnerTextToObject($("#spanContentThanks")[0], this._textSpanContentThanksPor);

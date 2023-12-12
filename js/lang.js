@@ -324,7 +324,7 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=en");
                 this.changeHrefToAnchor($("#anchor-logo")[0], "index.html?lang=en");
                 this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=en");
-                Cookies.set('lang', 'en');
+                Cookies.set('lang', 'en', { expires: 7 });
             break;
             case 'es':
                 $("#i-flag").attr("class","flag-mexico flag m-0");
@@ -369,7 +369,7 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=es");
                 this.changeHrefToAnchor($("#anchor-logo")[0], "index.html?lang=es");
                 this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=es");
-                Cookies.set('lang', 'es');
+                Cookies.set('lang', 'es', { expires: 7 });
             break;
             case 'pt':
                 $("#i-flag").attr("class","flag-brasil flag m-0");
@@ -414,7 +414,7 @@ class LanguageContainer {
                 this.changeHrefToAnchor($("#back2MainPage")[0], "index.html?lang=pt");
                 this.changeHrefToAnchor($("#anchor-logo")[0], "index.html?lang=pt");
                 this.changeActionToForm($("#contactForm")[0], "https://j6wrsf4g5k.execute-api.us-east-1.amazonaws.com/interaction/interaction?lang=pt");
-                Cookies.set('lang', 'pt');
+                Cookies.set('lang', 'pt', { expires: 7 });
             break;
         }
         return true;

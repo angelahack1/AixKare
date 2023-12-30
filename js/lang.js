@@ -18,9 +18,9 @@ class LanguageContainer {
         this._textMainPageEng = "Main page";
         this._textMainPageSpa = "Página principal";
         this._textMainPagePor = "Página principal";
-        this._textAboutPageEng = "About Artecnología";
-        this._textAboutPageSpa = "Acerca de Artecnología";
-        this._textAboutPagePor = "Sobre Artecnología";
+        this._textAboutPageEng = "About AiXKare";
+        this._textAboutPageSpa = "Acerca de AiXKare";
+        this._textAboutPagePor = "Sobre AiXKare";
         this._textProductsPageEng = "Products and Services";
         this._textProductsPageSpa = "Productos y Servicios";
         this._textProductsPagePor = "Produtos e serviços";
